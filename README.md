@@ -1,4 +1,4 @@
-# Registraion and Login using Node, Express and Mongodb
+# Registration and Login using Node, Express and Mongodb
 
 This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
 

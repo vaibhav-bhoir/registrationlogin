@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 
@@ -11,7 +13,8 @@ const app = express();
 require('./config/passport')(passport);
 
 // DB Config
-const db = require('./config/keys').mongoURI;
+// const db = require('./config/keys').mongoURI;
+const db = process.env.DB_PASSWORD;
 
 // Connect to MongoDB
 mongoose
